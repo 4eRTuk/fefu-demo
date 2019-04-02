@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@color/colorAccent"
+        tools:context=".SigninActivity">
+
+    <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content"
+            tools:ignore="ContentDescription"/>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_name"
+                android:inputType="text"
+                android:importantForAutofill="no"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:importantForAutofill="no"
+                  android:hint="@string/password"
+                  android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout android:gravity="end"
+                  android:layout_marginTop="16dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/skip"
+                android:textColor="@color/color_black"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:text="@string/skip"/>
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signin"
+                android:textColor="@color/color_white"
+                android:theme="@style/Button.Colored.Primary"
+                android:text="@string/login"/>
+    </LinearLayout>
+</LinearLayout>

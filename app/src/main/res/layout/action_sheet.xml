@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/color_white">
+
+    <TextView
+            android:id="@+id/review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Оставить отзыв"
+            android:gravity="center_vertical"
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/android_messages"
+            android:drawableLeft="@drawable/android_messages"
+            style="@style/TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+            android:id="@+id/call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Позвонить"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/phone"
+            android:drawableLeft="@drawable/phone"
+            style="@style/TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+            android:id="@+id/route"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Проложить маршрут"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/directions"
+            android:drawableLeft="@drawable/directions"
+            style="@style/TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+            android:id="@+id/order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сделать заказ"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/currency_usd"
+            android:drawableLeft="@drawable/currency_usd"
+            style="@style/TextAppearance.AppCompat.Medium"/>
+</LinearLayout>
