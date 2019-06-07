@@ -67,7 +67,7 @@ class SigninActivity : AppCompatActivity() {
         val fullUrl = FULL_URL
         val accountName = AUTHORITY
         val app = application as? IGISApplication
-        app?.addAccount(accountName, fullUrl, Constants.NGW_ACCOUNT_GUEST, null, "ngw")?.let {
+        app?.addAccount(accountName, fullUrl, "student", "student1", "ngw")?.let {
             if (!it) {
                 Toast.makeText(this, R.string.error_auth, Toast.LENGTH_SHORT).show()
                 app.getAccount(accountName)?.let { app.removeAccount(it) }
@@ -80,14 +80,14 @@ class SigninActivity : AppCompatActivity() {
     }
 
     companion object {
-        const val AUTHORITY = "dvfu-demo.nextgis.com"
+        const val AUTHORITY = "194.213.97.46:8080"
         const val FULL_URL = "http://$AUTHORITY"
         const val PERMISSIONS_CODE = 47
         const val INSTANCE = "http://${AUTHORITY}/resource/"
         val LAYERS = arrayListOf(
-            Pair("$INSTANCE/7", "Магазины"),
-            Pair("$INSTANCE/8", "Вендинговые автоматы"),
-            Pair("$INSTANCE/13", "Кафе и рестораны")
+            Pair("$INSTANCE/3", "Магазины"),
+            Pair("$INSTANCE/4", "Вендинговые автоматы"),
+            Pair("$INSTANCE/2", "Кафе и рестораны")
         )
     }
 
